@@ -31,10 +31,12 @@ class RealDataLoader(dop.DataLoader):
                  field = None,
                  cell_labels = None,
                  for_eval = False):
+        print('hi')
         self.gene_expression = gene_expression
         self.sample_n = gene_expression.shape[0]
         self.class_n = num_class
         self.gene_list = gene_list
+        print('hi')
         if field is None:
             field = np.zeros(self.sample_n)
         field = np.asarray(field)
